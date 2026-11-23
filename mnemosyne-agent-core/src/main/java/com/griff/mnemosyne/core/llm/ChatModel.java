@@ -9,4 +9,11 @@ package com.griff.mnemosyne.core.llm;
  */
 public interface ChatModel {
 
+    /**
+     * 同步调用大语言模型
+     *
+     * @param request 模型请求参数
+     * @return 模型响应
+     */
+    ChatResponse chat(ChatRequest request);
 }
